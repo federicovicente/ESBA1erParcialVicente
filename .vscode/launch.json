@@ -7,8 +7,9 @@
         {
             "type": "chrome",
             "request": "launch",
-            "name": "Open index.html",
-            "file": "c:\\ESBA\\4to cuatrimestre 2023\\03. Programación Web\\ESBA1erParcialVicente\\index.html"
+            "name": "Iniciar Chrome para localhost",
+            "url": "file:///C:/ESBA/4to%20cuatrimestre%202023/03.%20Programaci%C3%B3n%20Web/ESBA1erParcialVicente/index.html",
+            "webRoot": "${workspaceFolder}"
         }
     ]
 }
