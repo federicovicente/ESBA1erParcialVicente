@@ -1,6 +1,21 @@
+body {
+    background-color: #21222c;
+}
+
 hr { height: 2px;
     background-color: black; }
 
 .imgOscura {
     filter: brightness(50%);
+}
+
+
+.carousel{
+ padding: 1% 2% 1% 2%;
+}
+
+nav.navbar {
+    background-color: #ffffff !important;
+    padding: 0 0 0 0;
+    border-bottom-style:groove;
 }
