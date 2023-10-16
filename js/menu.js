@@ -30,6 +30,21 @@ function IniciarSesion(){
      }
      verificarLoguin()
 }
+
+function IniciarSesion2(){
+   nombreUsuario2 = document.getElementById('InputEmail1').value
+   passUsuario2 = document.getElementById('InputPassword1').value
+   if (nombreUsuario2 == 'federicov@gmail.com' && passUsuario2 === '123'){
+       loguin = 1
+       cerrarLoguin()
+       alert('Bienvenido')
+    } else {
+       alert('Usuario o contraseña incprrectos')
+       loguin = 0
+    }
+    verificarLoguin()
+}
+
 function cerrarLoguin() {
    $('#modalLoguin').modal('hide');
 }

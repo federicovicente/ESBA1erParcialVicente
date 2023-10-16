@@ -1,0 +1,6 @@
+hr { height: 2px;
+    background-color: black; }
+
+.imgOscura {
+    filter: brightness(50%);
+}
