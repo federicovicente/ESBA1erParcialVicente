@@ -19,3 +19,20 @@ nav.navbar {
     padding: 0 0 0 0;
     border-bottom-style:groove;
 }
+
+.tituloGrupos{
+    padding: 1% 2% 1% 2%;
+}
+.card{
+    margin: 0% 2% 2% 2% !important;
+}
+
+.img-fluid{
+    margin: 10px 10px 10px 10px !important;
+    transition: all .3s;
+}
+
+.img-fluid:hover{
+    transform: scale(1.1) translateY(-10px);
+
+}
