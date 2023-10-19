@@ -12,6 +12,7 @@ hr { height: 2px;
 
 .carousel{
  padding: 1% 2% 1% 2%;
+ margin: 0% 4% 0% 4% ;
 }
 
 nav.navbar {
@@ -21,18 +22,44 @@ nav.navbar {
 }
 
 .tituloGrupos{
-    padding: 1% 2% 1% 2%;
+    padding: 1% 2% 0% 2%;
+    margin-left: 4%;
 }
-.card{
+
+.carousel2 .card{
+    transition: all .5s;
     margin: 0% 2% 2% 2% !important;
+    width: 14rem;
+    height: 320px;
 }
 
-.img-fluid{
-    margin: 10px 10px 10px 10px !important;
-    transition: all .3s;
-}
-
-.img-fluid:hover{
-    transform: scale(1.1) translateY(-10px);
+.card:hover{
+    transform: scale(1.02);
 
 }
+
+.card-text{
+    font-size: small;
+}
+
+.carousel2 .carousel-control-prev{
+    margin-left: 0px !important;
+    width: 100px !important;
+
+}
+.carousel2 .carousel-control-next{
+    margin-right: 0px !important;
+    width: 100px !important;
+
+}
+
+.carousel2 .carousel-control-prev-icon, .carousel2 .carousel-control-next-icon {
+    height: 50px;
+    width: 50px;
+    outline: black;
+    background-color: rgb(54, 54, 54);
+    background-size: 80%, 80%;
+    border-radius: 50%;
+    border: 1px solid rgb(54, 54, 54);
+}
+
