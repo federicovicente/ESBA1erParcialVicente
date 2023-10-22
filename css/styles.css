@@ -6,8 +6,6 @@ body {
     background-color:#ebebeb !important;
   }
 
-hr { height: 2px;
-    background-color: black; }
 
 .imgOscura {
     filter: brightness(50%);
@@ -25,66 +23,36 @@ nav.navbar {
 }
 
 .tituloGrupos{
-    max-width: 1200px;
-  width: 100%;
+    max-width: 1300px;
+    width: 100%;
     display: flex !important;
     padding: 0 35px !important;
-
     text-align: center !important;
     justify-content: center !important;
 }
 
-.carousel2 .card{
-    transition: all .5s;
-    margin: 0% 2% 2% 2% !important;
-    width: 14rem;
-    height: 320px;
-}
 
-.card:hover{
+/*.cardfv:hover{
     transform: scale(1.02);
-
-}
+}*/
 
 .card-text{
     font-size: small;
-}
-
-.carousel2 .carousel-control-prev{
-    margin-left: 0px !important;
-    width: 100px !important;
-
-}
-.carousel2 .carousel-control-next{
-    margin-right: 0px !important;
-    width: 100px !important;
-
-}
-
-.carousel2 .carousel-control-prev-icon, .carousel2 .carousel-control-next-icon {
-    height: 50px;
-    width: 50px;
-    outline: rgb(0, 0, 0);
-    background-color: rgb(53, 53, 53);
-    background-size: 80%, 80%;
-    border-radius: 50%;
-    border: 1px solid rgb(54, 54, 54);
 }
 
 
 /*carrousel*/
 .centrador{
   display: flex !important;
-  padding: 0 35px !important;
+  padding: 0 35 0 35pxpx !important;
   align-items: center !important;
   justify-content: center !important;
 }
 
 .wrapperfv {
-  max-width: 1200px;
+  max-width: 1300px;
   width: 100%;
   position: relative;
-
 
 }
 .wrapperfv i {
@@ -115,7 +83,7 @@ nav.navbar {
 .wrapperfv .carouselfv{
   display: grid;
   grid-auto-flow: column;
-  grid-auto-columns: calc((100% / 5) - 12px);
+  grid-auto-columns: calc((100% / 5) - 8px);
   overflow-x: auto;
   scroll-snap-type: x mandatory;
   gap: 16px;
@@ -143,7 +111,7 @@ nav.navbar {
 }
 .carouselfv .cardfv {
   scroll-snap-align: start;
-  height: 310px;
+  height: 300px;
   list-style: none;
   background: #fff;
   cursor: pointer;
