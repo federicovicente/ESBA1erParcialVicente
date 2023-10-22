@@ -3,19 +3,21 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="css/cssboostrap.css">
+  <title>Vicente</title>
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
     crossorigin="anonymous"></script>
   <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-  <title>Vicente</title>
 </head>
 
 <body style="background-color:#ebebeb">
   <!-- navbar -->
-  <nav class="navbar navbar-expand-lg bg-body-tertiary" >
+  <nav class="navbar navbar-expand-lg bg-body-tertiary">
     <div class="container-fluid">
       <a class="navbar-brand" href="#">
         <img src="images/logoCompleto.png" alt="Bootstrap" height="40" style="margin: 0 0 0 0;">
@@ -45,7 +47,7 @@
               <li><a class="dropdown-item" href="#">Something else here</a></li>
             </ul>
           </li>
-          <li class="nav-item" >
+          <li class="nav-item">
             <a class="nav-link " href="#" id="iniciar" role="button" data-bs-toggle="modal"
               data-bs-target="#modalLoguin"></a>
           </li>
@@ -55,13 +57,14 @@
           <button class="btn btn-outline-success" type="submit">Search</button>
         </form>
         <div style="border-left:3px groove rgb(107, 107, 116); margin: 10px 10px 10px 10px; padding: 0 10px 0 10px;">
-          <button class="btn btn-primary" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasWithBothOptions"
-              aria-controls="offcanvasWithBothOptions" style="background-color: #4285F4;;">Iniciar sesión</button>
+          <button class="btn btn-primary" type="button" data-bs-toggle="offcanvas"
+            data-bs-target="#offcanvasWithBothOptions" aria-controls="offcanvasWithBothOptions"
+            style="background-color: #4285F4;;">Iniciar sesión</button>
         </div>
       </div>
     </div>
   </nav>
-  <script src="js/menu.js"></script>
+  
   <!-- loguin modal -->
   <div class="modal fade" id="modalLoguin" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
     <div class="modal-dialog">
@@ -90,7 +93,7 @@
       </div>
     </div>
   </div>
-  
+
   <!-- loguin Offcanvas -->
   <div class="offcanvas offcanvas-start" data-bs-scroll="true" tabindex="-1" id="offcanvasWithBothOptions"
     aria-labelledby="offcanvasWithBothOptionsLabel">
@@ -120,11 +123,14 @@
   <!-- Carousel -->
   <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
     <div class="carousel-indicators">
-      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
-      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
+        aria-current="true" aria-label="Slide 1"></button>
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+        aria-label="Slide 2"></button>
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+        aria-label="Slide 3"></button>
     </div>
-    <div class="carousel-inner" >
+    <div class="carousel-inner">
       <div class="carousel-item active">
         <img src="images/C-empresa.jpg" class="d-block w-100 imgOscura" alt="...">
         <div class="carousel-caption d-none d-md-block">
@@ -158,211 +164,100 @@
   </div>
 
   <!-- Más Buscados -->
-  <div class="tituloGrupos">
-    <p class="h4">Cursos más buscados...</p>
-  </div>
-  
-
-  
   <!-- prueba carousel con tarjetas -->
-<div class="carousel2">
-  <div id="carouselExampleControlsNoTouching" class="carousel slide" data-bs-touch="false" data-bs-interval="false" data-bs-wrap="false">
-    <div class="carousel-inner">
-      <div class="carousel-item active">
-        <div class="row">
-          <div class="col-sm-2">
-            <div class="card">
-              <div class="col-md-12">
-                <img src="images/T-admEmpresasjpg.jpg" class="card-img-top" alt="...">
-              </div>
-              <div class="card-body">
-                <h6 class="card-title">Administración de empresas</h6>
-                <p class="card-text">Breve descripción del curso de administración de empresas.</p>
-                <a href="#" class="card-link">Más información...</a>
-              </div>
-            </div>
-          </div>
-          <div class="col-sm-2">
-            <div class="card">
-              <div class="col-md-12">
-                <img src="images/T-admEmpresasjpg.jpg" class="card-img-top" alt="...">
-              </div>
-              <div class="card-body">
-                <h6 class="card-title">HTML, CSS, JS desde cero</h6>
-                <p class="card-text">Breve descripción del curso de HTML, CSS, JS desde cero.</p>
-                <a href="#" class="card-link">Más información...</a>
-              </div>
-            </div>
-          </div>
-          <div class="col-sm-2">
-            <div class="card">
-              <div class="col-md-12">
-                <img src="images/T-admEmpresasjpg.jpg" class="card-img-top" alt="...">
-              </div>
-              <div class="card-body">
-                <h6 class="card-title">HTML, CSS, JS desde cero</h6>
-                <p class="card-text">Breve descripción del curso de HTML, CSS, JS desde cero.</p>
-                <a href="#" class="card-link">Más información...</a>
-              </div>
-            </div>
-          </div>
-          <div class="col-sm-2">
-            <div class="card">
-              <div class="col-md-12">
-                <img src="images/T-admEmpresasjpg.jpg" class="card-img-top" alt="...">
-              </div>
-              <div class="card-body">
-                <h6 class="card-title">HTML, CSS, JS desde cero</h6>
-                <p class="card-text">Breve descripción del curso de HTML, CSS, JS desde cero.</p>
-                <a href="#" class="card-link">Más información...</a>
-              </div>
-            </div>
-          </div>
-          <div class="col-sm-2">
-            <div class="card">
-              <div class="col-md-12">
-                <img src="images/T-admEmpresasjpg.jpg" class="card-img-top" alt="...">
-              </div>
-              <div class="card-body">
-                <h6 class="card-title">Administración de empresas</h6>
-                <p class="card-text">Breve descripción del curso de administración de empresas.</p>
-                <a href="#" class="card-link">Más información...</a>
-              </div>
-            </div>
-          </div>
-          <div class="col-sm-2">
-            <div class="card">
-              <div class="col-md-12">
-                <img src="images/T-admEmpresasjpg.jpg" class="card-img-top" alt="...">
-              </div>
-              <div class="card-body">
-                <h6 class="card-title">Administración de empresas</h6>
-                <p class="card-text">Breve descripción del curso de administración de empresas.</p>
-                <a href="#" class="card-link">Más información...</a>
-              </div>
-            </div>
-          </div>
+  <div class="centrador">
+  <div class="wrapperfv">
+    <p class="h4">Cursos más buscados...</p>
+    <i id="left" class="fa-solid fa-angle-left"></i>
+    <ul class="carouselfv">
+      <li class="cardfv">
+        <div class="img"><img src="images/T-admEmpresasjpg.jpg" alt="img" draggable="false"></div>
+        <h5>Gestión Empresarial</h5>
+        <h6>Breve descripción del curso de gestión empresarial</h6>
+        <a href="#" class="card-link">Más información...</a>
+      </li>
+      <li class="cardfv">
+        <div class="img"><img src="images/T-admEmpresasjpg.jpg" alt="img" draggable="false"></div>
+        <h2>Joenas Brauers</h2>
+        <span>Web Developer</span>
+      </li>
+      <li class="cardfv">
+        <div class="img"><img src="images/T-admEmpresasjpg.jpg" alt="img" draggable="false"></div>
+        <h2>Lariach French</h2>
+        <span>Online Teacher</span>
+      </li>
+      <li class="cardfv">
+        <div class="img"><img src="images/C-empresa.jpg" alt="img" draggable="false"></div>
+        <h2>James Khosravi</h2>
+        <span>Freelancer</span>
+      </li>
+      <li class="cardfv">
+        <div class="img"><img src="images/C-IA.jpg" alt="img" draggable="false"></div>
+        <h2>Kristina Zasiadko</h2>
+        <span>Bank Manager</span>
+      </li>
+      <li class="cardfv">
+        <div class="img"><img src="images/C-tecnologia.jpg" alt="img" draggable="false"></div>
+        <h2>Donald Horton</h2>
+        <span>App Designer</span>
+      </li>
+    </ul>
+    <i id="right" class="fa-solid fa-angle-right"></i>
+  </div>
+</div>
+  <script src="js/script.js"></script>
+  <!-- tarjetas en columnas-->
+  <div class="row" style="margin: 6%;">
+    <div class="col-sm-2">
+      <div class="card" style="width: 15rem;">
+        <div class="col-md-12">
+          <img src="images/T-admEmpresasjpg.jpg" class="card-img-top" alt="...">
         </div>
-      </div>
-      <div class="carousel-item">
-        <div class="row">
-          <div class="col-sm-2">
-            <div class="card">
-              <div class="col-md-12">
-                <img src="images/T-admEmpresasjpg.jpg" class="card-img-top" alt="...">
-              </div>
-              <div class="card-body">
-                <h6 class="card-title">2</h6>
-                <p class="card-text">Breve descripción del curso de administración de empresas.</p>
-                <a href="#" class="card-link">Más información...</a>
-              </div>
-            </div>
-          </div>
-          <div class="col-sm-2">
-            <div class="card">
-              <div class="col-md-12">
-                <img src="images/T-admEmpresasjpg.jpg" class="card-img-top" alt="...">
-              </div>
-              <div class="card-body">
-                <h6 class="card-title">2</h6>
-                <p class="card-text">Breve descripción del curso de HTML, CSS, JS desde cero.</p>
-                <a href="#" class="card-link">Más información...</a>
-              </div>
-            </div>
-          </div>
-          <div class="col-sm-2">
-            <div class="card">
-              <div class="col-md-12">
-                <img src="images/T-admEmpresasjpg.jpg" class="card-img-top" alt="...">
-              </div>
-              <div class="card-body">
-                <h6 class="card-title">2</h6>
-                <p class="card-text">Breve descripción del curso de HTML, CSS, JS desde cero.</p>
-                <a href="#" class="card-link">Más información...</a>
-              </div>
-            </div>
-          </div>
-          <div class="col-sm-2">
-            <div class="card">
-              <div class="col-md-12">
-                <img src="images/T-admEmpresasjpg.jpg" class="card-img-top" alt="...">
-              </div>
-              <div class="card-body">
-                <h6 class="card-title">2</h6>
-                <p class="card-text">Breve descripción del curso de HTML, CSS, JS desde cero.</p>
-                <a href="#" class="card-link">Más información...</a>
-              </div>
-            </div>
-          </div>
+        <div class="card-body">
+          <h6 class="card-title">Administración de empresas</h6>
+          <p class="card-text">Breve descripción del curso de administración de empresas.</p>
+          <a href="#" class="card-link">Más información...</a>
         </div>
       </div>
     </div>
-    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControlsNoTouching" data-bs-slide="prev">
-      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-      <span class="visually-hidden">Anterior</span>
-    </button>
-    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControlsNoTouching" data-bs-slide="next">
-      <span class="carousel-control-next-icon" aria-hidden="true"></span>
-      <span class="visually-hidden">Siguiente</span>
-    </button>
-  </div>
-</div>
-
-
-<!-- tarjetas en columnas-->
-<div class="row" style="margin: 6%;">
-  <div class="col-sm-2">
-    <div class="card" style="width: 15rem;">
-      <div class="col-md-12">
-        <img src="images/T-admEmpresasjpg.jpg" class="card-img-top" alt="...">
+    <div class="col-sm-2">
+      <div class="card" style="width: 15rem;">
+        <div class="col-md-12">
+          <img src="images/T-admEmpresasjpg.jpg" class="card-img-top" alt="...">
+        </div>
+        <div class="card-body">
+          <h6 class="card-title">HTML, CSS, JS desde cero</h6>
+          <p class="card-text">Breve descripción del curso de HTML, CSS, JS desde cero.</p>
+          <a href="#" class="card-link">Más información...</a>
+        </div>
       </div>
-      <div class="card-body">
-        <h6 class="card-title">Administración de empresas</h6>
-        <p class="card-text">Breve descripción del curso de administración de empresas.</p>
-        <a href="#" class="card-link">Más información...</a>
+    </div>
+    <div class="col-sm-2">
+      <div class="card" style="width: 15rem;">
+        <div class="col-md-12">
+          <img src="images/T-admEmpresasjpg.jpg" class="card-img-top" alt="...">
+        </div>
+        <div class="card-body">
+          <h6 class="card-title">HTML, CSS, JS desde cero</h6>
+          <p class="card-text">Breve descripción del curso de HTML, CSS, JS desde cero.</p>
+          <a href="#" class="card-link">Más información...</a>
+        </div>
+      </div>
+    </div>
+    <div class="col-sm-2">
+      <div class="card" style="width: 15rem;">
+        <div class="col-md-12">
+          <img src="images/T-admEmpresasjpg.jpg" class="card-img-top" alt="...">
+        </div>
+        <div class="card-body">
+          <h6 class="card-title">HTML, CSS, JS desde cero</h6>
+          <p class="card-text">Breve descripción del curso de HTML, CSS, JS desde cero.</p>
+          <a href="#" class="card-link">Más información...</a>
+        </div>
       </div>
     </div>
   </div>
-  <div class="col-sm-2">
-    <div class="card" style="width: 15rem;">
-      <div class="col-md-12">
-        <img src="images/T-admEmpresasjpg.jpg" class="card-img-top" alt="...">
-      </div>
-      <div class="card-body">
-        <h6 class="card-title">HTML, CSS, JS desde cero</h6>
-        <p class="card-text">Breve descripción del curso de HTML, CSS, JS desde cero.</p>
-        <a href="#" class="card-link">Más información...</a>
-      </div>
-    </div>
-  </div>
-  <div class="col-sm-2">
-    <div class="card" style="width: 15rem;">
-      <div class="col-md-12">
-        <img src="images/T-admEmpresasjpg.jpg" class="card-img-top" alt="...">
-      </div>
-      <div class="card-body">
-        <h6 class="card-title">HTML, CSS, JS desde cero</h6>
-        <p class="card-text">Breve descripción del curso de HTML, CSS, JS desde cero.</p>
-        <a href="#" class="card-link">Más información...</a>
-      </div>
-    </div>
-  </div>
-  <div class="col-sm-2">
-    <div class="card" style="width: 15rem;">
-      <div class="col-md-12">
-        <img src="images/T-admEmpresasjpg.jpg" class="card-img-top" alt="...">
-      </div>
-      <div class="card-body">
-        <h6 class="card-title">HTML, CSS, JS desde cero</h6>
-        <p class="card-text">Breve descripción del curso de HTML, CSS, JS desde cero.</p>
-        <a href="#" class="card-link">Más información...</a>
-      </div>
-    </div>
-  </div>
-</div>
 
-
- 
 </body>
 
 </html>
