@@ -1,4 +1,3 @@
-//carrousel
 const wrapper = document.querySelector(".wrapperfv");
 const carousel = document.querySelector(".carouselfv");
 const firstCardWidth = carousel.querySelector(".cardfv").offsetWidth;
@@ -70,6 +69,9 @@ document.addEventListener("mouseup", dragStop);
 carousel.addEventListener("scroll", infiniteScroll);
 wrapper.addEventListener("mouseenter", () => clearTimeout(timeoutId));
 wrapper.addEventListener("mouseleave", autoPlay);
+
+
+
 
 
 let loguin

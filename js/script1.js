@@ -40,6 +40,8 @@ const dragStop = () => {
     isDragging = false;
     carousel.classList.remove("dragging");
 }
+
+
 const infiniteScroll = () => {
     // If the carousel is at the beginning, scroll to the end
     if(carousel.scrollLeft === 0) {
