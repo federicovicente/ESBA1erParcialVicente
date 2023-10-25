@@ -76,8 +76,6 @@ wrapper.addEventListener("mouseleave", autoPlay);
 
 let loguin
 
-verificarLoguin()
-
 function verificarLoguin(){
    let loguinEstado = document.getElementById('iniciar')
 
