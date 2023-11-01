@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 
 <head>
   <meta charset="UTF-8">
@@ -22,10 +22,6 @@
       <a class="navbar-brand" href="#">
         <img src="images/logoCompleto.png" alt="Bootstrap" height="40" style="margin: 0 0 0 0;">
       </a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
-        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav me-auto mb-2 mb-lg-0">
           <li class="nav-item">
@@ -57,42 +53,13 @@
           <button class="btn btn-outline-success" type="submit">Search</button>
         </form>
         <div style="border-left:3px groove rgb(107, 107, 116); margin: 10px 10px 10px 10px; padding: 0 10px 0 10px;">
-          <button class="btn btn-primary" type="button" data-bs-toggle="offcanvas"
+          <button id="btniniciarsesion" class="btn btn-primary" type="button" data-bs-toggle="offcanvas"
             data-bs-target="#offcanvasWithBothOptions" aria-controls="offcanvasWithBothOptions"
             style="background-color: #4285F4;;">Iniciar sesión</button>
         </div>
       </div>
     </div>
   </nav>
-
-  <!-- loguin modal SIN USO-->
-  <div class="modal fade" id="modalLoguin" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-    <div class="modal-dialog">
-      <div class="modal-content">
-        <div class="modal-header">
-          <h1 class="modal-title fs-5" id="exampleModalLabel">Acceder</h1>
-          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close" id="cerrarIS"></button>
-        </div>
-        <div class="modal-body">
-          <form>
-            <div class="mb-3">
-              <label for="recipient-name" class="col-form-label">Nombre de usuario:</label>
-              <input type="text" class="form-control" id="usuario">
-            </div>
-            <div class="mb-3">
-              <label for="message-text" class="col-form-label">Contraseña:</label>
-              <input type="text" class="form-control" id="contrasenia">
-            </div>
-          </form>
-        </div>
-        <div class="modal-footer">
-          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal" id="cerrar">Cancelar</button>
-          <button type="button" class="btn btn-primary" id="btnIniciarSesion" onclick="IniciarSesion()">Iniciar
-            sesión</button>
-        </div>
-      </div>
-    </div>
-  </div>
 
   <!-- loguin Offcanvas -->
   <div class="offcanvas offcanvas-start" data-bs-scroll="true" tabindex="-1" id="offcanvasWithBothOptions"
@@ -104,22 +71,23 @@
     <div class="offcanvas-body">
       <form>
         <div class="mb-3">
-          <label for="exampleInputEmail1" class="form-label">Correo electrónico</label>
-          <input type="email" class="form-control" id="InputEmail1" aria-describedby="emailHelp">
+          <label for="exampleInputEmail" class="form-label">Correo electrónico</label>
+          <input type="email" class="form-control" id="emailuser" aria-describedby="emailHelp">
           <div id="emailHelp" class="form-text">Nunca compartiremos su correo electrónico con nadie más.</div>
         </div>
         <div class="mb-3">
-          <label for="exampleInputPassword1" class="form-label">Contraseña</label>
-          <input type="password" class="form-control" id="InputPassword1">
+          <label for="exampleInputPassword" class="form-label">Contraseña</label>
+          <input type="password" class="form-control" id="contraseniauser">
         </div>
         <div class="mb-3 form-check">
-          <input type="checkbox" class="form-check-input" id="exampleCheck1">
-          <label class="form-check-label" for="exampleCheck1">Verificado</label>
+          <input type="checkbox" class="form-check-input" id="exampleCheck">
+          <label class="form-check-label" for="exampleCheck">Verificado</label>
         </div>
-        <button type="submit" class="btn btn-primary" onclick="IniciarSesion2()">Enviar</button>
+        <button type="submit" class="btn btn-primary" onclick="IniciarSesion()">Enviar</button>
       </form>
     </div>
   </div>
+
   <!-- Carousel -->
   <div class="flexbox-margin-auto">
     <div class="flexbox-margin-auto_content">
@@ -168,6 +136,7 @@
       </div>
     </div>
   </div>
+
   <!-- carousel con tarjetas más buscados -->
   <div class="centrador">
     <div class="wrapperfv">
@@ -175,39 +144,39 @@
       <i id="left" class="fa-solid fa-angle-left"></i>
       <ul class="carouselfv">
         <li class="cardfv">
-          <div class="img"><img src="images/T-admEmpresasjpg.jpg" alt="img" draggable="false"></div>
-          <h5>Gestión Empresarial</h5>
-          <h6>Breve descripción del curso de gestión empresarial</h6>
+          <div class="img"><img src="images/I_tecnicas_negociacion.jpg" alt="img" draggable="false"></div>
+          <h5>Técnicas de negociación</h5>
+          <h6>Breve descripción del curso de Técnicas de negociación</h6>
+          <a href="c_tec_negoc.html" class="card-link">Más información...</a>
+        </li>
+        <li class="cardfv">
+          <div class="img"><img src="images/I_big_data.jpg" alt="img" draggable="false"></div>
+          <h5>Big Data: procesamiento y análisis</h5>
+          <h6>Breve descripción del curso Big Data: procesamiento y análisis</h6>
           <a href="#" class="card-link">Más información...</a>
         </li>
         <li class="cardfv">
-          <div class="img"><img src="images/T-admEmpresasjpg.jpg" alt="img" draggable="false"></div>
-          <h5>Cuso destacado 2</h5>
-          <h6>Breve descripción del curso destacado 2</h6>
+          <div class="img"><img src="images/I_disenio_web.jpg" alt="img" draggable="false"></div>
+          <h5>Diseño Web desde cero</h5>
+          <h6>Breve descripción del curso Diseño Web desde cero</h6>
           <a href="#" class="card-link">Más información...</a>
         </li>
         <li class="cardfv">
-          <div class="img"><img src="images/T-admEmpresasjpg.jpg" alt="img" draggable="false"></div>
-          <h5>Cuso destacado 3</h5>
-          <h6>Breve descripción del curso destacado 3</h6>
+          <div class="img"><img src="images/I_administracion_servidores.jpg" alt="img" draggable="false"></div>
+          <h5>Manejo de servidores Linux</h5>
+          <h6>Breve descripción del curso Manejo de servidores Linux</h6>
           <a href="#" class="card-link">Más información...</a>
         </li>
         <li class="cardfv">
-          <div class="img"><img src="images/C-empresa.jpg" alt="img" draggable="false"></div>
-          <h5>Cuso destacado 4</h5>
-          <h6>Breve descripción del curso destacado 4</h6>
+          <div class="img"><img src="images/I_gestion_proyectos.jpg" alt="img" draggable="false"></div>
+          <h5>Gestión de proyectos</h5>
+          <h6>Breve descripción del curso Gestión de proyectos</h6>
           <a href="#" class="card-link">Más información...</a>
         </li>
         <li class="cardfv">
-          <div class="img"><img src="images/C-IA.jpg" alt="img" draggable="false"></div>
-          <h5>Cuso destacado 5</h5>
-          <h6>Breve descripción del curso destacado 5</h6>
-          <a href="#" class="card-link">Más información...</a>
-        </li>
-        <li class="cardfv">
-          <div class="img"><img src="images/C-tecnologia.jpg" alt="img" draggable="false"></div>
-          <h5>Cuso destacado 6</h5>
-          <h6>Breve descripción del curso destacado 6</h6>
+          <div class="img"><img src="images/I_comunicacion_corporativa.jpg" alt="img" draggable="false"></div>
+          <h5>Comunicación corporativa</h5>
+          <h6>Breve descripción del curso Comunicación corporativa</h6>
           <a href="#" class="card-link">Más información...</a>
         </li>
       </ul>
@@ -216,6 +185,7 @@
   </div>
   <script src="js/script.js"></script>
   
+   <!-- Footer -->
   <footer class="footer">
     <div class="wrap-footer">
       <div class="text-element-footer element-footer">
@@ -267,6 +237,7 @@
     </div>
     </div>
   </footer>
+
 </body>
 
 </html>

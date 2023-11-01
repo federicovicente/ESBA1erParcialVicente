@@ -186,6 +186,9 @@ nav.navbar {
 footer{
     background-color: #f1f1f1;
     color: var(--second-c);
+    position: relative;
+    bottom: 0;
+    width: 100%;
   }
 
 footer .imgLogo img{
