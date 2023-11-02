@@ -3,22 +3,42 @@ body {
     align-items: center !important;
     justify-content: center !important;
     min-height: 100vh !important;
-    background: linear-gradient(to left top, #102497, #7e3ffd) !important;
-      
+    background: linear-gradient(to left top, #102497, #7e3ffd) !important; 
   }
+
 .imgOscura {
     filter: brightness(50%);
 }
-
+nav.navbar {
+    background-color: #f1f1f1 !important;
+}
+/*carrousel Imagenes*/
 .carousel{
     max-width: 1500px !important;
     margin: 40px 0% 40px 0% !important;
     display: flex !important;
-    padding: 0 35px !important;
     text-align: center !important;
     justify-content: center !important;
-    padding: 0 35 0 35pxpx !important;
+    padding: 0 5% 0 5% !important;
 }
+@media screen and (max-width: 1400px) {
+    .carousel {
+        padding: 0 0% 0 0% !important;
+        margin: 30px 0% 10px 0% !important;
+    }
+  }
+@media screen and (max-width: 900px) {
+    .carousel {
+        padding: 0 0% 0 0% !important;
+        margin: 10px 0% 10px 0% !important;
+    }
+  }
+  @media screen and (max-width: 600px) {
+    .carousel {
+        padding: 0 0% 0 0% !important;
+        margin: 10px 0% 10px 0% !important;
+    }
+  }
 
 .flexbox-margin-auto {
     display: flex;
@@ -33,36 +53,18 @@ body {
     border-radius: 1% !important;
 }
 
-nav.navbar {
-    background-color: #f1f1f1 !important;
-}
-
-.tituloGrupos{
-    max-width: 1300px;
-    width: 100%;
-    display: flex !important;
-    padding: 0 35px !important;
-    text-align: center !important;
-    justify-content: center !important;
-}
-
-
-/*.cardfv:hover{
-    transform: scale(1.02);
-}*/
-
 .card-text{
     font-size: small;
 }
+/*FIN carrousel Imagenes*/
 
-
-/*carrousel*/
+/*carrousel Tarjetas*/
 .centrador{
   display: flex !important;
   padding: 0 35 0 35px !important;
   align-items: center !important;
   justify-content: center !important;
-  margin-bottom: 40px;
+  margin-bottom: 40px !important;
 }
 
 .wrapperfv {
@@ -126,7 +128,7 @@ nav.navbar {
 }
 .carouselfv .cardfv {
   scroll-snap-align: start;
-  height: 260px;
+  height: 280px;
   list-style: none;
   background: #fff;
   cursor: pointer;
@@ -145,10 +147,31 @@ nav.navbar {
 }
 
 .wrapperfv h4{
-    font-weight: 400;
+    font-weight: 350;
     color: #f8f8f8 !important;
     font-size: 1.7rem !important;
     margin-bottom: 15px !important;
+  }
+  @media screen and (max-width: 1300px) {
+    .wrapperfv h4 {
+        font-weight: 320;
+        margin-left: 10px;
+        font-size: 1.6rem !important;
+    }
+  }
+  @media screen and (max-width: 900px) {
+    .wrapperfv h4 {
+        font-weight: 270;
+        margin-left: 10px;
+        font-size: 1.5rem !important;
+    }
+  }
+  @media screen and (max-width: 600px) {
+    .wrapperfv h4 {
+        font-weight: 250;
+        margin-left: 10px;
+        font-size: 1.4rem !important;
+    }
   }
 .carouselfv .cardfv h5 {
     font-weight: 500;
@@ -172,16 +195,25 @@ nav.navbar {
   color: #6A6D78;
   font-size: 1.31rem;
 }
+@media screen and (max-width: 1300px) {
+    .wrapperfv .carouselfv {
+      grid-auto-columns: calc((105% / 4) - 8px);
+      margin: 10px;
+    }
+  }
 @media screen and (max-width: 900px) {
   .wrapperfv .carouselfv {
-    grid-auto-columns: calc((100% / 3) - 8px);
+    grid-auto-columns: calc((104% / 3) - 8px);
+    margin: 10px;
   }
 }
 @media screen and (max-width: 600px) {
   .wrapperfv .carouselfv {
-    grid-auto-columns: 100%;
+    grid-auto-columns: 52%;
+    margin: 10px;
   }
 }
+/*FIN carrousel Tarjetas*/
 
 footer{
     background-color: #f1f1f1;
