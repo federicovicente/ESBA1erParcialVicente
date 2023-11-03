@@ -311,16 +311,65 @@ footer .imgLogo img{
   }
 
 
-  .imgcurso{
-    margin-top: 50px;
-    align-items: center;
-    display: flex;
-    position: relative;
-    max-width: 700px;
+  .container {
+    display: grid;
+    margin: 40px;
+    grid-template-columns: 500px 250px;
+    grid-template-rows: 350px;
+    grid-column-gap: 10px;
+    grid-row-gap: 10px;
+    justify-items: stretch;
+    align-items: stretch;
+ }
+
+ .wrap-curso{
+    display: grid;
+    grid-template-columns: 63% 37%;
+    column-gap: 1%;
+    padding: 1rem;
+    margin: 10px auto;
+    max-width: 1200px;
+    
   }
 
-  .imgcurso img {
-    max-width: 700px;
-    border-radius: 2%;
-    object-fit: cover;
+  .descripcion-curso {
+    margin: 5px auto;
+	width: 100%;
+	min-width: 300px;
+	max-width: 600px;
+	position: relative;
+	height: auto;
+	min-height: 100px;
+	max-height: 500px;
+	border-radius: 1%;
+	overflow: hidden;
+	background-image: linear-gradient(to bottom right, #000000, #292929);
+    margin-right: 20px;
   }
+
+  .descripcion-curso img{
+    max-width : 700px;
+    max-height: 400px;
+	width: 100%;
+	position: relative;
+
+  }
+
+  .banner-curso {
+	padding: 2%;
+	color: #fff;
+
+}
+
+  .wrap-curso-detalle {
+    max-width: 300px;
+    height: 500px;
+    object-fit:contain;
+    border-style:groove;
+    border-color: #000000;
+    border-radius: 2%;
+    background-color: #f1f1f1;
+  }
+  
+
+ 
