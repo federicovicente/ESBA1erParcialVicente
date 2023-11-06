@@ -372,3 +372,26 @@ img {
 	position: relative;
 }
 
+@media (max-width:1300px){
+  .descripcion-curso { 
+      max-width: 700px;
+      margin-right: 30px;
+  }
+}
+@media (max-width:1200px){
+  .descripcion-curso { 
+      max-width: 650px;
+      margin-right: 20px;
+  }
+}
+@media (max-width:1000px){
+  .descripcion-curso { 
+      max-width: 600px;
+      margin-right: 10px;
+  }
+}
+@media (max-width:900px){
+  .descripcion-curso { 
+      margin-right: 0px;
+  }
+}
