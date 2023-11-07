@@ -248,7 +248,7 @@ footer h6 {
 
 /*Footer*/
 footer {
-    display: flex;
+    display: grid;
     background-color: #f1f1f1;
     color: var(--second-c);
     position: relative;
@@ -322,11 +322,15 @@ footer li {
 .footer-creds {
     display: flex;
     justify-content: space-between;
-    padding: 0 1rem;
+    padding: 0 16px;
     color: #576171;
     font-size: .9rem;
-    max-width: 1200px;
+    max-width: 1500px;
     margin: 0 auto;
+}
+
+.copy-creds{
+    margin-right: 40px;
 }
 
 .legal-creds ul {
@@ -335,7 +339,8 @@ footer li {
 }
 
 .legal-creds ul li {
-    padding-right: 1rem;
+    padding-right: 40px;
+    
 }
 
 .legal-creds ul a {
@@ -378,7 +383,7 @@ footer li {
 .wrap-curso {
     display: flex;
     flex-wrap: wrap;
-    margin: 20px 5px 5px 5px;
+    margin: 20px 5px 40px 5px;
     justify-content: center;
 }
 
@@ -418,9 +423,9 @@ footer li {
     min-height: 200px;
     max-height: 600px;
     border-radius: 1%;
-    background-image: linear-gradient(to bottom right, #ffffff, #bdbdbd);
+    background-image: linear-gradient(to bottom right, #ffffff, #eeeeee);
     box-shadow: rgba(0, 0, 0, 0.5) 0px 2px 4px 0px, rgba(0, 0, 0, 0.514) 0px 2px 16px 0px;
-    padding: 5px;
+    padding: 20px 10px 20px 10px;
 }
 
 @media (max-width:900px) {
@@ -444,4 +449,14 @@ footer li {
         max-width: 700px;
         margin-right: 0px;
     }
+}
+
+
+.btn-outline-dark{
+    width: 100% !important;
+    box-shadow: rgba(0, 0, 0, 0.5) 0px 2px 4px 0px, rgba(0, 0, 0, 0.514) 0px 2px 16px 0px !important;
+
+}
+.btn-outline-dark:hover{
+    background-color: rgba(20, 20, 20, 0.822) !important;
 }
