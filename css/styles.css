@@ -66,6 +66,16 @@ nav.navbar {
 
 /*FIN carrousel Imagenes*/
 
+
+.centrador{
+    display: flex !important;
+    padding: 0 35 0 35px !important;
+    align-items: center !important;
+    justify-content: center !important;
+    margin-bottom: 40px;
+  }
+
+
 /*carrousel Tarjetas*/
 .contenedor-carouselt {
     display: flex !important;
