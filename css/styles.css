@@ -109,11 +109,11 @@ nav.navbar {
     right: -22px;
 }
 
-.carouselfv {
+.wrapperfv .carouselfv {
     display: grid;
     grid-auto-flow: column;
     grid-auto-columns: calc((100% / 5) - 8px);
-    overflow-x:hidden !important;
+    overflow-x:auto;
     padding: 0 !important;
     scroll-snap-type:x mandatory !important;
     gap: 16px;
@@ -403,6 +403,7 @@ footer li {
 .descripcion-curso img {
     position: relative;
     width: 100%;
+    filter: brightness(60%);
 }
 
 .banner-curso {
@@ -451,12 +452,13 @@ footer li {
     }
 }
 
-
 .btn-outline-dark{
     width: 100% !important;
-    box-shadow: rgba(0, 0, 0, 0.5) 0px 2px 4px 0px, rgba(0, 0, 0, 0.514) 0px 2px 16px 0px !important;
+    box-shadow: rgba(0, 0, 0, 0.514) 0px 0px 8px !important;
+    
 
 }
 .btn-outline-dark:hover{
     background-color: rgba(20, 20, 20, 0.822) !important;
+    box-shadow: rgba(0, 0, 0, 0.514) 0px 0px 8px !important;
 }

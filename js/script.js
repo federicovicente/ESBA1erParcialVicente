@@ -3,17 +3,17 @@ const carousel = document.querySelector(".carouselfv");
 const firstCardWidth = carousel.querySelector(".cardfv").offsetWidth;
 const arrowBtns = document.querySelectorAll(".wrapperfv i");
 const carouselChildrens = [...carousel.children];
-let isDragging = false, isAutoPlay = false, startScrollLeft, timeoutId;
+let isDragging = false, isAutoPlay = false, startX, startScrollLeft, timeoutId;
 // Get the number of cards that can fit in the carousel at once
 let cardPerView = Math.round(carousel.offsetWidth / firstCardWidth);
 // Insert copies of the last few cards to beginning of carousel for infinite scrolling
-    carouselChildrens.slice(-cardPerView).reverse().forEach(card => {
-        carousel.insertAdjacentHTML("afterbegin", card.outerHTML);
-    });
+carouselChildrens.slice(-cardPerView).reverse().forEach(card => {
+    carousel.insertAdjacentHTML("afterbegin", card.outerHTML);
+});
 // Insert copies of the first few cards to end of carousel for infinite scrolling
-    carouselChildrens.slice(0, cardPerView).forEach(card => {
-        carousel.insertAdjacentHTML("beforeend", card.outerHTML);
-    });
+carouselChildrens.slice(0, cardPerView).forEach(card => {
+    carousel.insertAdjacentHTML("beforeend", card.outerHTML);
+});
 // Scroll the carousel at appropriate postition to hide first few duplicate cards on Firefox
 carousel.classList.add("no-transition");
 carousel.scrollLeft = carousel.offsetWidth;
@@ -32,7 +32,7 @@ const dragStart = (e) => {
     startScrollLeft = carousel.scrollLeft;
 }
 const dragging = (e) => {
-    if(!isDragging) return; // if isDragging is false return from here
+    if (!isDragging) return; // if isDragging is false return from here
     // Updates the scroll position of the carousel based on the cursor movement
     carousel.scrollLeft = startScrollLeft - (e.pageX - startX);
 }
@@ -42,23 +42,23 @@ const dragStop = () => {
 }
 const infiniteScroll = () => {
     // If the carousel is at the beginning, scroll to the end
-    if(carousel.scrollLeft === 0) {
+    if (carousel.scrollLeft === 0) {
         carousel.classList.add("no-transition");
         carousel.scrollLeft = carousel.scrollWidth - (2 * carousel.offsetWidth);
         carousel.classList.remove("no-transition");
     }
     // If the carousel is at the end, scroll to the beginning
-    else if(Math.ceil(carousel.scrollLeft) === carousel.scrollWidth - carousel.offsetWidth) {
+    else if (Math.ceil(carousel.scrollLeft) === carousel.scrollWidth - carousel.offsetWidth) {
         carousel.classList.add("no-transition");
         carousel.scrollLeft = carousel.offsetWidth;
         carousel.classList.remove("no-transition");
     }
     // Clear existing timeout & start autoplay if mouse is not hovering over carousel
     clearTimeout(timeoutId);
-    if(!wrapper.matches(":hover")) ;
+    if (!wrapper.matches(":hover"));
 }
 const autoPlay = () => {
-    if(window.innerWidth < 800 || !isAutoPlay) return; // Return if window is smaller than 800 or isAutoPlay is false
+    if (window.innerWidth < 800 || !isAutoPlay) return; // Return if window is smaller than 800 or isAutoPlay is false
     // Autoplay the carousel after every 2500 ms
     timeoutId = setTimeout(() => carousel.scrollLeft += firstCardWidth, 2500);
 }
@@ -75,36 +75,36 @@ wrapper.addEventListener("mouseleave", autoPlay);
 
 let loguin
 
-function verificarLoguin(){
-   let loguinEstado = document.getElementById('btniniciarsesion')
+function verificarLoguin() {
+    let loguinEstado = document.getElementById('btniniciarsesion')
 
-   if (loguin === 1){
-       loguinEstado.textContent = 'Bienvenido'
-    } else{
-       loguinEstado.textContent = 'Iniciar sesión'
+    if (loguin === 1) {
+        loguinEstado.textContent = 'Bienvenido'
+    } else {
+        loguinEstado.textContent = 'Iniciar sesión'
     }
 }
 
- let nombreUsuario
- let passUsuario
+let nombreUsuario
+let passUsuario
 
-function IniciarSesion(){
+function IniciarSesion() {
     nombreUsuario = document.getElementById('emailuser').value
     passUsuario = document.getElementById('contraseniauser').value
-    if (nombreUsuario === 'federicov@gmail.com' && passUsuario === '123'){
+    if (nombreUsuario === 'federicov@gmail.com' && passUsuario === '123') {
         loguin = 1
         cerrarLoguin()
         alert('Bienvenido')
-     } else {
+    } else {
         alert('Usuario o contraseña incorrectos')
         loguin = 0
-     }
-     verificarLoguin()
+    }
+    verificarLoguin()
 }
 
 
 function cerrarLoguin() {
-   $('#modalLoguin').modal('hide');
+    $('#modalLoguin').modal('hide');
 }
 
 
