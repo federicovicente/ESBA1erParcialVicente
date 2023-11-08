@@ -431,6 +431,7 @@ footer li {
   
   .comprar-curso {
     display: flex;
+    flex-wrap: wrap;
     flex-direction: column;
     justify-content: space-between;
     flex-grow: 1;
@@ -445,12 +446,19 @@ footer li {
     box-shadow: rgba(0, 0, 0, 0.5) 0px 2px 4px 0px, rgba(0, 0, 0, 0.514) 0px 2px 16px 0px;
     padding: 20px 10px 20px 10px;
   }
+  .comprar-curso p{
+    margin: 0px 0px 5px 0px;
+  }
+  .comprar-curso h6{
+    margin: 0px 0px 5px 0px;
+  }
   
   @media (max-width:1200px) {
     .comprar-curso {
         flex-direction: row;
-        justify-content: space-between;
-        position:relative;
+        justify-content: space-around;
+        display: grid;
+        grid-template-columns:40% 40%;
         width: 100%;
         min-width: 450px;
         max-width: 700px;
@@ -459,7 +467,46 @@ footer li {
         margin-right: 10px;
     }
   }
-  
+  @media (max-width:1200px) {
+    .descripcion-curso {
+        position: relative;
+        width: 100%;
+        min-width: 450px;
+        max-width: 700px;
+        margin-right: 10px;
+        margin-left: 10px;
+    }
+  }
+  @media (max-width:1200px) {
+    .descripcion-curso {
+        position: relative;
+        width: 100%;
+        min-width: 450px;
+        max-width: 700px;
+        margin-right: 10px;
+        margin-left: 10px;
+    }
+  }
+  @media (max-width:1200px) {
+    .descripcion-curso {
+        position: relative;
+        width: 100%;
+        min-width: 450px;
+        max-width: 700px;
+        margin-right: 10px;
+        margin-left: 10px;
+    }
+  }
+  @media (max-width:1200px) {
+    .descripcion-curso {
+        position: relative;
+        width: 100%;
+        min-width: 450px;
+        max-width: 700px;
+        margin-right: 10px;
+        margin-left: 10px;
+    }
+  }
   @media (max-width:1200px) {
     .descripcion-curso {
         position: relative;
@@ -471,10 +518,17 @@ footer li {
     }
   }
   @media (max-width:600px) {
+    .comprar-curso{
+      padding: 10px;
+    }
+  }
+
+  @media (max-width:600px) {
     .banner-curso{
       min-height: 100px;
     }
   }
+  
   @media (max-width:600px) {
     .banner-curso h4{
       font-weight: 500;
@@ -482,12 +536,24 @@ footer li {
     }
   }
   @media (max-width:600px) {
-    .banner-curso p{
+    .banner-curso, .comprar-curso  p{
       font-weight: 350;
       font-size: 0.9rem !important;
     }
   }
-  
+
+  @media (max-width:600px) {
+    .comprar-curso p{
+        margin: 0px 0px 0px 0px;
+        
+    }
+  }
+  @media (max-width:600px) {
+    .comprar-curso h6{
+        margin: 0px 0px 0px 0px;
+    }
+  }
+
   .btn-outline-dark{
     width: 100% !important;
     box-shadow: rgba(0, 0, 0, 0.514) 0px 0px 8px !important;
