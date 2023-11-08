@@ -389,41 +389,47 @@ footer li {
     width: 100%;
     display: grid;
     align-items: center !important;
-}
-
-.wrap-curso {
+  }
+  
+  .wrap-curso {
     display: flex;
     flex-wrap: wrap;
     margin: 20px 5px 40px 5px;
     justify-content: center;
-}
-
-.descripcion-curso {
+  }
+  
+  .descripcion-curso {
     position: relative;
     width: 65%;
+    aspect-ratio: 15/9;
     min-width: 450px;
-    max-width: 750px;
+    max-width: 850px;
     border-radius: 1%;
     overflow: hidden;
     margin-right: 40px;
     background-image: linear-gradient(to bottom right, #000000, #292929);
     box-shadow: rgba(0, 0, 0, 0.5) 0px 2px 4px 0px, rgba(0, 0, 0, 0.514) 0px 2px 16px 0px;
-}
-
-
-.descripcion-curso img {
-    position: relative;
+  }
+  
+  
+  .descripcion-curso img {
+    position: absolute;
     width: 100%;
-    filter: brightness(60%);
-}
-
-.banner-curso {
+    filter: brightness(80%);
+  }
+  
+  .banner-curso {
+    position: absolute;
     padding: 2%;
     color: #e4e4e4;
     min-height: 130px;
-}
-
-.comprar-curso {
+    width: 100%;
+    background-image: linear-gradient(to top, #000000, #00000073);
+    bottom: 0;
+    text-align: justify;
+  }
+  
+  .comprar-curso {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -438,38 +444,57 @@ footer li {
     background-image: linear-gradient(to bottom right, #ffffff, #eeeeee);
     box-shadow: rgba(0, 0, 0, 0.5) 0px 2px 4px 0px, rgba(0, 0, 0, 0.514) 0px 2px 16px 0px;
     padding: 20px 10px 20px 10px;
-}
-
-@media (max-width:900px) {
+  }
+  
+  @media (max-width:1200px) {
     .comprar-curso {
         flex-direction: row;
         justify-content: space-between;
-        position: relative;
+        position:relative;
         width: 100%;
         min-width: 450px;
         max-width: 700px;
         margin-top: 20px;
-        margin-left: 0px;
+        margin-left: 10px;
+        margin-right: 10px;
     }
-}
-
-@media (max-width:900px) {
+  }
+  
+  @media (max-width:1200px) {
     .descripcion-curso {
         position: relative;
         width: 100%;
         min-width: 450px;
         max-width: 700px;
-        margin-right: 0px;
+        margin-right: 10px;
+        margin-left: 10px;
     }
-}
-
-.btn-outline-dark{
+  }
+  @media (max-width:600px) {
+    .banner-curso{
+      min-height: 100px;
+    }
+  }
+  @media (max-width:600px) {
+    .banner-curso h4{
+      font-weight: 500;
+      font-size: 1.2rem !important;
+    }
+  }
+  @media (max-width:600px) {
+    .banner-curso p{
+      font-weight: 350;
+      font-size: 0.9rem !important;
+    }
+  }
+  
+  .btn-outline-dark{
     width: 100% !important;
     box-shadow: rgba(0, 0, 0, 0.514) 0px 0px 8px !important;
     
-
-}
-.btn-outline-dark:hover{
+  
+  }
+  .btn-outline-dark:hover{
     background-color: rgba(20, 20, 20, 0.822) !important;
     box-shadow: rgba(0, 0, 0, 0.514) 0px 0px 8px !important;
-}
+  }
