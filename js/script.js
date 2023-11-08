@@ -107,4 +107,16 @@ function cerrarLoguin() {
     $('#modalLoguin').modal('hide');
 }
 
+    
+    // const btningresarcupon = document.querySelector(".ingresarcupon")
 
+function panelCupon(){
+    var panelcupon = getElementById(".panelcupon")
+    if (panelcupon.style.display === "none") {
+        panelcupon.style.display = "block";
+    } else {
+        panelcupon.style.display = "none";
+    }
+
+
+}

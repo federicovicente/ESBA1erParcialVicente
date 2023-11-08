@@ -557,10 +557,16 @@ footer li {
   .btn-outline-dark{
     width: 100% !important;
     box-shadow: rgba(0, 0, 0, 0.514) 0px 0px 8px !important;
-    
+    margin-top: 20px !important;
   
   }
   .btn-outline-dark:hover{
     background-color: rgba(20, 20, 20, 0.822) !important;
     box-shadow: rgba(0, 0, 0, 0.514) 0px 0px 8px !important;
+  }
+
+  .contenedorcupon a{
+    font-weight: 350;
+    font-size: 1rem !important;
+    color: #292929;
   }
