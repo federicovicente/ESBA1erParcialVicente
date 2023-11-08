@@ -81,13 +81,13 @@ nav.navbar {
     display: flex !important;
     width: 100%;  
     justify-content: center !important;
-    overflow: hidden !important;
+    overflow: hidden;
 }
 
 .wrapperfv {
     max-width: 1300px;
-    position: relative;
     width: 100%;
+    position: relative;
 }
 
 .wrapperfv i {
@@ -123,9 +123,9 @@ nav.navbar {
     display: grid;
     grid-auto-flow: column;
     grid-auto-columns: calc((100% / 5) - 8px);
-    overflow-x:auto;
+    overflow-x: auto;
     padding: 0 !important;
-    scroll-snap-type:x mandatory !important;
+    scroll-snap-type: x mandatory;
     gap: 16px;
     border-radius: 4px;
     scroll-behavior: smooth;
@@ -382,8 +382,9 @@ footer li {
         margin: 10px 0px 10px 0px;
     }
 }
+/*FIN Footer*/
 
-
+/*CURSOS*/
 .contenedor-curso {
     width: 100%;
     display: grid;

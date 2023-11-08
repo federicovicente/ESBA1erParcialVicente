@@ -5,7 +5,7 @@ const arrowBtns = document.querySelectorAll(".wrapperfv i");
 const carouselChildrens = [...carousel.children];
 let isDragging = false, isAutoPlay = false, startX, startScrollLeft, timeoutId;
 // Get the number of cards that can fit in the carousel at once
-let cardPerView = Math.round(carousel.offsetWidth / firstCardWidth);
+let cardPerView = 6;//Math.round(carousel.offsetWidth / firstCardWidth);
 // Insert copies of the last few cards to beginning of carousel for infinite scrolling
 carouselChildrens.slice(-cardPerView).reverse().forEach(card => {
     carousel.insertAdjacentHTML("afterbegin", card.outerHTML);
