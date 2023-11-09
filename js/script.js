@@ -107,16 +107,25 @@ function cerrarLoguin() {
     $('#modalLoguin').modal('hide');
 }
 
-    
     // const btningresarcupon = document.querySelector(".ingresarcupon")
 
-function panelCupon(){
-    var panelcupon = getElementById(".panelcupon")
-    if (panelcupon.style.display === "none") {
-        panelcupon.style.display = "block";
+function panelCupon1(){
+    var panel = document.getElementById("panelcupon")
+    if (panel.style.display === "none") {
+        panel.style.display = "block";
     } else {
-        panelcupon.style.display = "none";
+        panel.style.display = "none";
     }
 
 
+}
+
+
+
+
+function panelCupon(){
+    const panel = document.getElementsByClassName("panel_cupon")[0];
+    if (panel.style.visibility == "hidden") {
+        panel.style.visibility = "visible";
+    } 
 }
