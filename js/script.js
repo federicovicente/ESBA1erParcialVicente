@@ -1,3 +1,4 @@
+if (location.href.includes("index.html")){
 const wrapper = document.querySelector(".wrapperfv");
 const carousel = document.querySelector(".carouselfv");
 const firstCardWidth = carousel.querySelector(".cardfv").offsetWidth;
@@ -5,7 +6,7 @@ const arrowBtns = document.querySelectorAll(".wrapperfv i");
 const carouselChildrens = [...carousel.children];
 let isDragging = false, isAutoPlay = false, startX, startScrollLeft, timeoutId;
 // Get the number of cards that can fit in the carousel at once
-let cardPerView = 6;//Math.round(carousel.offsetWidth / firstCardWidth);
+let cardPerView = Math.round(carousel.offsetWidth / firstCardWidth);
 // Insert copies of the last few cards to beginning of carousel for infinite scrolling
 carouselChildrens.slice(-cardPerView).reverse().forEach(card => {
     carousel.insertAdjacentHTML("afterbegin", card.outerHTML);
@@ -69,8 +70,7 @@ document.addEventListener("mouseup", dragStop);
 carousel.addEventListener("scroll", infiniteScroll);
 wrapper.addEventListener("mouseenter", () => clearTimeout(timeoutId));
 wrapper.addEventListener("mouseleave", autoPlay);
-
-
+}
 
 
 let loguin
@@ -107,20 +107,6 @@ function cerrarLoguin() {
     $('#modalLoguin').modal('hide');
 }
 
-    // const btningresarcupon = document.querySelector(".ingresarcupon")
-
-function panelCupon1(){
-    var panel = document.getElementById("panelcupon")
-    if (panel.style.display === "none") {
-        panel.style.display = "block";
-    } else {
-        panel.style.display = "none";
-    }
-
-
-}
-
-
 
 
 function panelCupon(){
@@ -128,4 +114,20 @@ function panelCupon(){
     if (panel.style.visibility == "hidden") {
         panel.style.visibility = "visible";
     } 
+}
+
+
+function verificarCupon() {
+    const descuento1 = '10OFFlunes';
+    const cuponIngresado = document.getElementById('cupon').value
+    const cuponvalido = document.getElementById("avisocupon");
+    if (cuponIngresado === descuento1) {
+        cuponvalido.className = "alert alert-success";
+        cuponvalido.textContent = "Cupón registrado!"
+        
+    } else {
+        cuponvalido.className = "alert alert-danger";
+        cuponvalido.textContent = "El cupón no es válido"
+    }
+    cuponvalido.style.visibility = "visible";
 }

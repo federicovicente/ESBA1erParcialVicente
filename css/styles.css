@@ -15,6 +15,21 @@ nav.navbar {
     background-color: #f1f1f1 !important;
 }
 
+.separadornav{
+    border-left:3px groove rgb(107, 107, 116); 
+    margin: 10px 10px 10px 10px; 
+    padding: 0 10px 0 10px;
+    
+}
+
+@media screen and (max-width:990px) {
+    .separadornav {
+        border-left: none !important;
+        padding: 0 10px 0 0px;
+        margin: 20px 10px 10px 2px;
+    }
+}
+
 /*carrousel Imagenes*/
 .carousel {
     max-width: 1500px !important;
@@ -574,17 +589,42 @@ footer li {
     font-size: 1.1rem !important;
   }
 
+  .panel_cupon{
+    display: flex;
+  }
+
   .panel_cupon .btn-outline-dark{
-    width: 65px !important;
+    width: 30% !important;
     height: 35px !important;
-    margin: -5px 0px 0px -5px !important;
-    padding: 2px !important;
+    margin: 0px !important;
+    padding: 0%;
     border-radius: 0% !important;
     box-shadow: none !important;
+    bottom: 0 !important;
   }
 
   .inputcupon{
-    width: 160px !important;
-    margin-top: 0px !important;
+    width: 68% !important;
     height: 35px !important;
+    margin: 0px !important;
+    padding: 0%;
+    bottom: 0 !important;
+  }
+
+  @media (max-width:600px) {
+    .panel_cupon .btn-outline-dark{
+      width: 32% !important;
+    }
+  }
+
+  .contenedorcupon .alert-danger{
+    padding: 2px !important;
+    font-size: .9rem !important;
+    margin-top: 5px !important;
+  }
+
+  .contenedorcupon .alert-success{
+    padding: 2px !important;
+    font-size: .9rem !important;
+    margin-top: 5px !important;
   }
