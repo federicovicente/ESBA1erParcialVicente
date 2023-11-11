@@ -80,8 +80,6 @@
                     <p>Federico vicente</p>
                     <h6>Certificado:</h6>
                     <p>Oficial</p>
-                </div>
-                <div class="div">
                     <h6>Duración:</h6>
                     <p>240 hs</p>
                     <h6>Idioma:</h6>
@@ -94,13 +92,19 @@
                             <input class="inputcupon" type="text" name="cupon" id="cupon" placeholder="Introducir el cupon">
                             <button type="button" class="btn btn-outline-dark" onclick="verificarCupon()">Validar</button>
                         </div>
-                        <div class="alert alert-danger" role="alert" id="avisocupon" style="visibility:hidden;">
+                        <div class="alert alert-danger" role="alert" id="avisocupon" style="display: none;">
                             aviso
                         </div>
                     </form>
-                </div>
-                <div class="div">
-                    <h4>detalle</h4>
+                    <div>
+                        <div class="precio" id="precioOriginal">
+                            <h3>69,99 US$</h3>
+                        </div>
+                        <div class="preciodescuento" id="precioDescuento">
+                            <h3>62,99 US$</h3>
+                        </div>
+
+                    </div>
                     <button type="button" class="btn btn-outline-dark">Comprar ahora!</button>
                 </div>
             </div>

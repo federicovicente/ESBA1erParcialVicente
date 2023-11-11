@@ -118,16 +118,23 @@ function panelCupon(){
 
 
 function verificarCupon() {
-    const descuento1 = '10OFFlunes';
+    const descuento1 = '10offesba';
     const cuponIngresado = document.getElementById('cupon').value
     const cuponvalido = document.getElementById("avisocupon");
+    const precioOriginal = document.getElementById("precioOriginal");
+    const precioDescuento = document.getElementById("precioDescuento");
     if (cuponIngresado === descuento1) {
         cuponvalido.className = "alert alert-success";
-        cuponvalido.textContent = "Cupón registrado!"
-        
+        cuponvalido.textContent = "Cupón registrado!";
+        precioOriginal.className = "preciotachado";
+        precioOriginal.style.display = "block";
+        precioDescuento.style.display = "block";
     } else {
         cuponvalido.className = "alert alert-danger";
-        cuponvalido.textContent = "El cupón no es válido"
+        cuponvalido.textContent = "El cupón no es válido";
+        precioOriginal.className = "precio";
+        precioDescuento.style.display ="none";
     }
-    cuponvalido.style.visibility = "visible";
+    cuponvalido.style.display = "block";
 }
+

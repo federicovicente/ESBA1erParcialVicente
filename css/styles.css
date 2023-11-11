@@ -454,7 +454,7 @@ footer li {
     min-width: 100px;
     max-width: 250px;
     height: auto;
-    min-height: 200px;
+    min-height: 250px;
     max-height: 600px;
     border-radius: 1%;
     background-image: linear-gradient(to bottom right, #ffffff, #f5f2f2);
@@ -467,6 +467,9 @@ footer li {
   .comprar-curso h6{
     margin: 0px 0px 5px 0px;
   }
+
+
+  
   
   @media (max-width:1200px) {
     .comprar-curso {
@@ -545,13 +548,13 @@ footer li {
   }
   
   @media (max-width:600px) {
-    .banner-curso h4{
+    .banner-curso h4 {
       font-weight: 500;
       font-size: 1.2rem !important;
     }
   }
   @media (max-width:600px) {
-    .banner-curso, .comprar-curso  p{
+    .banner-curso, .comprar-curso, .btn-link  p {
       font-weight: 350;
       font-size: 0.9rem !important;
     }
@@ -559,20 +562,35 @@ footer li {
 
   @media (max-width:600px) {
     .comprar-curso p{
-        margin: 0px 0px 0px 0px;
+        margin: 3px 0px 0px 0px;
         
     }
   }
   @media (max-width:600px) {
     .comprar-curso h6{
-        margin: 0px 0px 0px 0px;
+        margin: 5px 0px 0px 0px;
+    }
+  }
+  @media (max-width:600px) {
+    .comprar-curso h3{
+        font-weight: 350;
+        font-size: 2rem !important;
+        margin: 5px 0px 0px 0px !important;
+    }
+  }
+
+  @media (max-width:600px) {
+    .precio h5{
+        font-size: 1.2rem !important;
+        margin: 20px 0px 0px 5px !important;
     }
   }
 
   .btn-outline-dark{
     width: 100% !important;
     box-shadow: rgba(0, 0, 0, 0.514) 0px 0px 8px !important;
-    margin-top: 20px !important;
+    margin-top: 10px !important;
+    border-radius: 0% !important;
   
   }
   .btn-outline-dark:hover{
@@ -580,6 +598,7 @@ footer li {
     box-shadow: rgba(0, 0, 0, 0.514) 0px 0px 8px !important;
   }
 
+  
 
   .contenedorcupon .btn-link{
     color: #292929 !important;
@@ -611,20 +630,49 @@ footer li {
     bottom: 0 !important;
   }
 
-  @media (max-width:600px) {
-    .panel_cupon .btn-outline-dark{
-      width: 32% !important;
-    }
-  }
 
   .contenedorcupon .alert-danger{
     padding: 2px !important;
     font-size: .9rem !important;
     margin-top: 5px !important;
+    margin-bottom: 0px !important;
   }
 
   .contenedorcupon .alert-success{
     padding: 2px !important;
     font-size: .9rem !important;
     margin-top: 5px !important;
+    margin-bottom: 0px !important;
+  }
+
+
+  .precio {
+    display: flex;
+  }
+
+  .preciodescuento {
+    display: flex;
+  }
+
+  .precio h3 {
+    font-weight: 500;
+    font-size: 2.5rem;
+    margin-top: 30px;
+  }
+
+  .preciodescuento h3 {
+    font-weight: 500;
+    font-size: 2.5rem;
+    margin-top: 5px;
+  }
+
+  .preciotachado h3 {
+    font-weight: 350;
+    font-size: 1.4rem;
+    margin: 10px 0px 0px 0px;
+    text-decoration: line-through;
+  }
+
+  .preciotachado, .preciodescuento{
+    display:none;
   }
